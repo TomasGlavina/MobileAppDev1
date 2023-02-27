@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Convertidor de Temperatura</string>
+    <string name="temperature_converter">Convertidor de Temperatura</string>
+    <string name="result">Resultado</string>
+    <string name="button_converter">Convertir</string>
+</resources>
