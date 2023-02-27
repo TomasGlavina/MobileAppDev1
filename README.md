@@ -20,8 +20,25 @@ Topics:
 
 Some examples:
 
-- #### Celsius/Fahrenheit - Fahrenheit/Celsius Converter
+#### Celsius/Fahrenheit - Fahrenheit/Celsius Converter
 
 Celsius - Farenheit | Fahrenheit - Celsius | Spanish localization
 :-------------------:|:--------------------:|:-----------------------:
 ![](https://github.com/TomasGlavina/MobileAppDev1/blob/main/Converter/converter-cel.png) | ![](https://github.com/TomasGlavina/MobileAppDev1/blob/main/Converter/converter-far.png) | ![](https://github.com/TomasGlavina/MobileAppDev1/blob/main/Converter/converter-spa.png)
+
+In this exercise I developed a basic app that converts a temperature with the following features:
+- The user inputs the data and type. 
+- Can be from Celsius to Fahrenheit, or Fahrenheit to Celsius
+- With the arrow icon you can change the option. 
+- Has Spanish localization with no hardcoded strings.
+
+#### Weather App - Forecast
+Current Weather | Forecast
+----------------|-----------
+![](https://github.com/TomasGlavina/MobileAppDev1/blob/main/WeatherApp/current-weather.jpeg) | ![](https://github.com/TomasGlavina/MobileAppDev1/blob/main/WeatherApp/forecast.jpeg)
+
+### Using REST API from OpenWeatherMap API
+
+Before fetching | After fetching
+:---------------:|:---------------:
+![](https://github.com/TomasGlavina/MobileAppDev1/blob/main/WeatherApp/weather-before.jpeg) | ![](https://github.com/TomasGlavina/MobileAppDev1/blob/main/WeatherApp/weather-after.jpeg)
