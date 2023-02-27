@@ -24,4 +24,4 @@ Some examples:
 
 Celsius - Farenheit | Fahrenheit - Celsius | Spanish localization
 :-------------------:|:--------------------:|:-----------------------:
-![](https://github.com/TomasGlavina/MobileAppDev1/Converter/converter-cel.png) | ![](https://github.com/TomasGlavina/MobileAppDev1/Converter/converter-far.png) | ![](https://github.com/TomasGlavina/MobileAppDev1/Converter/converter-spa.png)
+![](https://github.com/TomasGlavina/MobileAppDev1/tree/main/Converter/converter-cel.png) | ![](https://github.com/TomasGlavina/MobileAppDev1/tree/main/Converter/converter-far.png) | ![](https://github.com/TomasGlavina/MobileAppDev1/tree/main/Converter/converter-spa.png)
