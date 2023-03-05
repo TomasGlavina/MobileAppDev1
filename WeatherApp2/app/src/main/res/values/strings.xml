@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Weather App</string>'
+    <string name="weather">24</string>
+    <string name="button_to_forecast">Forecast</string>
+    <string name="button_to_weather">Weather Now</string>
+    <string name="forecast_text">Forecast</string>
+    <string name="temperature_string">Temperature</string>
+    <string name="wind_string">Wind</string>
+    <string name="weather_string">Weather</string>
+    <string name="refresh">Refresh</string>
+    <string name="to_tuni_fi">To tuni.fi</string>
+    <string name="add_alarm">Add Alarm</string>
+    <string name="open_maps">Open Maps</string>
+</resources>

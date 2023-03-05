@@ -28,7 +28,7 @@
         android:backgroundTint="#101740"
         android:onClick="moveToForecast"
         android:text="@string/button_to_forecast"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/mapID"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.719"
         app:layout_constraintStart_toEndOf="@+id/refreshId"
@@ -97,6 +97,42 @@
         app:layout_constraintStart_toEndOf="@+id/weatherLabelID"
         app:layout_constraintTop_toBottomOf="@+id/windValID" />
 
+
+    <Button
+        android:id="@+id/tuniID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="openTuni"
+        android:text="@string/to_tuni_fi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/calendarID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/refreshId" />
+
+    <Button
+        android:id="@+id/calendarID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="addAlarm"
+        android:text="@string/add_alarm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mapID"
+        app:layout_constraintStart_toEndOf="@+id/tuniID"
+        app:layout_constraintTop_toBottomOf="@+id/toForecastID" />
+
+    <Button
+        android:id="@+id/mapID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="openMaps"
+        android:text="@string/open_maps"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/calendarID"
+        app:layout_constraintTop_toBottomOf="@+id/toForecastID" />
     <Button
         android:id="@+id/refreshId"
         android:layout_width="wrap_content"
@@ -105,7 +141,7 @@
         android:onClick="fetchWeatherData"
         android:text="@string/refresh"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tuniID"
         app:layout_constraintEnd_toStartOf="@+id/toForecastID"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/weatherLabelID" />

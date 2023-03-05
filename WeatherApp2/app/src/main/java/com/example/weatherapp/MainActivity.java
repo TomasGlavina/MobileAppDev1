@@ -3,9 +3,12 @@ package com.example.weatherapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.PersistableBundle;
+import android.provider.AlarmClock;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
@@ -56,8 +59,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void fetchWeatherData(View view) {
-        String apiKey = "";
-        String url = "https://api.openweathermap.org/data/2.5/weather?q=tampere&units=metric&appid=" + apiKey;
+        String url = "https://api.openweathermap.org/data/2.5/weather?q=tampere&units=metric&appid=856e65d8ef6f0694042468033374dfd9";
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                 response -> {
                     Log.d("WEATHER_APP", response);
@@ -100,4 +102,40 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void openMaps(View view) {
+        Uri geoLocation = Uri.parse("geo:0,0?q=Kuntokatu+3%2C%20Tampere");
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(geoLocation);
+        try{
+            startActivity(intent);
+        }
+        catch (ActivityNotFoundException e) {
+               //not found
+           }
+    }
+
+    public void addAlarm(View view) {
+            Intent intent = new Intent(AlarmClock.ACTION_SET_ALARM)
+                    .putExtra(AlarmClock.EXTRA_MESSAGE, "wake up!")
+                    .putExtra(AlarmClock.EXTRA_HOUR, 9)
+                    .putExtra(AlarmClock.EXTRA_MINUTES, 00);
+           try{
+                startActivity(intent);
+            }
+           catch (ActivityNotFoundException e) {
+               //not found
+           }
+    }
+
+    public void openTuni(View view) {
+        String urlString = "https://www.tuni.fi";
+        Uri uri = Uri.parse(urlString);
+
+        Intent openWebPage = new Intent(Intent.ACTION_VIEW, uri);
+        try {
+            startActivity(openWebPage);
+        } catch (ActivityNotFoundException e) {
+            System.out.println("No web browser found: " + e);
+        }
+    }
 }
