@@ -59,7 +59,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void fetchWeatherData(View view) {
-        String url = "https://api.openweathermap.org/data/2.5/weather?q=tampere&units=metric&appid=856e65d8ef6f0694042468033374dfd9";
+	String apiKey = "";
+        String url = "https://api.openweathermap.org/data/2.5/weather?q=tampere&units=metric&appid=" + apiKey;
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                 response -> {
                     Log.d("WEATHER_APP", response);
